@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hungry Monster</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+
+
+<!---------menu section------->
+
+<section>
+    <div class="container" id="navbar-container">
+      <nav class="navbar navbar-expand-lg menu-item">
+          <a class="navbar-brand brand-name" href="#"><img class="logo" src="images/logo.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div  class="collapse navbar-collapse  d-flex justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto" >
+              <li class="nav-item active">
+                <a class="nav-link" href="home.html">Home</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="recipes.html">Recipes</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>  
+            </ul>
+          </div>
+        </nav>
+
+<div class="container search-section">
+    <div class="flex">
+        <form class="flex" id="submit">
+            <input type="text" name="" id="search" placeholder="Search for meals...">
+            <button class="search-btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+    </div>
+    <div id="items"></div>
+    <div id="result-handling"></div>
+    <div id="meals" class="meals"></div>
+    <div class="single-meal d-flex justify-content-center" id="single-meal"></div>
+
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
